@@ -1,38 +1,45 @@
 <script lang="ts">
+    import Graphics from "../assets/Graphics.svelte";
+    import LandingPageGraphic from "../assets/Landing Page Graphic.svelte";
+
     let sections: any = [
         {
-            section: "Target Audience",
+            title: "Target Audience",
             clicked: false,
-            content: "This is the content for Target Audience"
+            content: "<p> This portfolio is target toward future educators, employers, coworkers, and clients. </p>"
         },
         
         {
-            section: "Graphics",
+            title: "Graphics",
             clicked: false,
-            content: "This is the content for Graphics"
+
+        },
+
+        {
+            title: "Name Plate",
+            clicked: false,
+            content: `<p style="font-size: 4vw;"><span style="font-size: 16vw;">c</span>hristian<span style="font-size: 16vw;">p</span>arkinson</p>`
         },
         
         {
-            section: "Name Plate",
+            title: "Slogan",
             clicked: false,
-            content: "This is the content for Name Plate"
-        },
-        
-        {
-            section: "Slogan",
-            clicked: false,
-            content: "This is the content for Slogan"
         }
     ];
-
 </script>
 <container>
     {#each sections as section}
         <div on:click={() => section.clicked = !section.clicked} class:clicked={section.clicked}>
-            <h1>{section.section}</h1>
+            <h1>{section.title}</h1>
             {#if section.clicked}
                 <content>
-                    {section.content}
+                    {#if section.title === "Graphics"}
+                        <Graphics />
+                    {:else if section.title === "Slogan"}
+                        <LandingPageGraphic />
+                    {:else}
+                        {@html section.content}
+                    {/if}
                 </content>
             {/if}
         </div>
@@ -47,6 +54,17 @@
         justify-content: space-evenly;
         height: 90vh;
     }
+    h1 {
+        font-size: 2vw;
+        margin-bottom: 0;
+    }
+    content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 1.2vw;
+    }
     div {
         display: flex;
         flex-direction: column;
@@ -56,7 +74,7 @@
         width: 33vw;
         background-color: #FCFAEE;
         color: #141414;
-        border-radius: 0.5vw;
+        border-radius: 0.2vw;
         transition: 0.3s;
         &:hover {
             height: 30vh;
@@ -77,6 +95,9 @@
             position: absolute;
             width: 50vw;
             height: 80vh;
+            background-color: #00A676;
+            color: #FCFAEE;
+            transition: 0.5s 0.2s;
             &~ div {
                 opacity: 0;
                 transform: translateY(100vh);

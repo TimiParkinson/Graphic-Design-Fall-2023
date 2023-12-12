@@ -33,7 +33,7 @@
     button {
         border: none;
         background: none;
-        font-size: 1vw;
+        font-size: 1.5vw;
         text-decoration: none;
         margin-bottom: 0;
         transition: 0.3s ease-in-out;
@@ -42,7 +42,7 @@
             display: block;
             margin: auto;
             width: 0;
-            height: 2px;
+            height: 0.1vh;
             background: transparent;
             transition: 0.3s ease-in-out;
         }

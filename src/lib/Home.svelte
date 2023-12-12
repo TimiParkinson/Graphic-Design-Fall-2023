@@ -3,8 +3,8 @@
 </script>
 
 <div>
-    <h1>Christian Parkinson</h1>
-    <Landing_SVG class="svg"/>
+    <h1>CHRISTIAN PARKINSON</h1>
+    <Landing_SVG />
 </div>
 
 <style lang="scss">
@@ -18,7 +18,7 @@
     }
 
     h1 {
-        font-size: 3.75vw;
+        font-size: 3vw;
         margin-bottom: 0;
     }
 </style>

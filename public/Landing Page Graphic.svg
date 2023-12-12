@@ -3,13 +3,13 @@
   <defs>
     <style>
       .d {
-        stroke: #231f20;
+        stroke: #00A676;
         stroke-miterlimit: 10;
         stroke-width: .25px;
       }
 
       .e {
-        fill: #231f20;
+        fill: #00A676;
         stroke-width: 0px;
       }
     </style>
