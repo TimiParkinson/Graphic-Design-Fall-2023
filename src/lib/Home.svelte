@@ -4,12 +4,13 @@
 
 <div>
     <h1>Christian Parkinson</h1>
-    <Landing_SVG />
+    <Landing_SVG class="svg"/>
 </div>
 
 <style lang="scss">
     div {
         display: flex;
+
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -17,7 +18,7 @@
     }
 
     h1 {
-        font-size: 3rem;
+        font-size: 3.75vw;
         margin-bottom: 0;
     }
 </style>

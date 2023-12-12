@@ -3,17 +3,26 @@ $front-color: #FCFAEE
 
 @font-face
   font-family: "bodyFont"
-  src: local("TimiSans") url("/Users/christianparkinson/Desktop/2023 Fall Semester Da Vinci Connect/CTE Graphic Design/Graphic-Design-Fall-2023/public/fonts/TimiSans.otf") format("opentype")
+  src: local("TimiSans") url("/https://github.com/TimiParkinson/Graphic-Design-Fall-2023/blob/3c41c8c99dac4a63e663b69341084fcd8c239838/public/fonts/TimiSans.otf") format("opentype")
 @font-face
   font-family: "titleFont"
-  src: local("OluSans") url("/Users/christianparkinson/Desktop/2023 Fall Semester Da Vinci Connect/CTE Graphic Design/Graphic-Design-Fall-2023/public/fonts/OluSans.otf") format("opentype")
+  src: local("OluSans") url("https://github.com/TimiParkinson/Graphic-Design-Fall-2023/blob/3c41c8c99dac4a63e663b69341084fcd8c239838/public/fonts/OluSans.otf") format("opentype")
 
 body
-    color-scheme: dark
-    background-color: $background-color
-    color: $front-color
-    fill: $front-color
-    stroke: $front-color
-    font-family: "bodyFont", sans-serif
-h1 h2 h3 h4 h5 h6
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 100vw
+  height: 100vh
+  color-scheme: dark
+  background-color: $background-color
+  color: $front-color
+  fill: $front-color
+  stroke: $front-color
+  overflow: hidden
+  margin: 0
+  padding: 0
+  h1 h2 h3 h4 h5 h6
     font-family: "titleFont", sans-serif
+  p
+    font-family: "bodyFont", sans-serif
