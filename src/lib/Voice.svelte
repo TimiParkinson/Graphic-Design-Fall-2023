@@ -1,6 +1,5 @@
 <script lang="ts">
     import Graphics from "../assets/Graphics.svelte";
-    import LandingPageGraphic from "../assets/Landing Page Graphic.svelte";
 
     let sections: any = [
         {
@@ -24,6 +23,7 @@
         {
             title: "Slogan",
             clicked: false,
+            content: `<p style="font-size: 6vw"> I GOT NOW </p>`
         }
     ];
 </script>
@@ -35,8 +35,6 @@
                 <content>
                     {#if section.title === "Graphics"}
                         <Graphics />
-                    {:else if section.title === "Slogan"}
-                        <LandingPageGraphic />
                     {:else}
                         {@html section.content}
                     {/if}
@@ -62,6 +60,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 100%;
         text-align: center;
         font-size: 1.2vw;
     }
@@ -109,5 +108,8 @@
             transform: translateY(-100vh);
             transition: 0.5s;
         }
+    }
+    .svg {
+        display: none
     }
 </style>
