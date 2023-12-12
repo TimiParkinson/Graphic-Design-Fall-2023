@@ -6,7 +6,6 @@
   import Promises from './lib/Promises.svelte';
   import Values from './lib/Values.svelte';
   import Positioning from './lib/Positioning.svelte';
-  src/lib/Home.svelte
   let page = "home";
   let pages = {
     home: Home,
