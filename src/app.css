@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "bodyFont";
+  src: local("TimiSans") url("/Users/christianparkinson/Desktop/2023 Fall Semester Da Vinci Connect/CTE Graphic Design/Graphic-Design-Fall-2023/public/fonts/TimiSans.otf") format("opentype");
+}
+@font-face {
+  font-family: "titleFont";
+  src: local("OluSans") url("/Users/christianparkinson/Desktop/2023 Fall Semester Da Vinci Connect/CTE Graphic Design/Graphic-Design-Fall-2023/public/fonts/OluSans.otf") format("opentype");
+}
+body {
+  color-scheme: dark;
+  background-color: #141414;
+  color: #FCFAEE;
+  fill: #FCFAEE;
+  stroke: #FCFAEE;
+  font-family: "bodyFont", sans-serif;
+}
+
+h1 h2 h3 h4 h5 h6 {
+  font-family: "titleFont", sans-serif;
+}/*# sourceMappingURL=app.css.map */
