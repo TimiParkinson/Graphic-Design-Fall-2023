@@ -1,20 +1,19 @@
 <script lang="ts">
-    import Graphics from "../assets/Graphics.svelte";
+    import Logo from "../assets/Logo.svelte";
 
     let sections: any = [
         {
             title: "Color Palette",
             clicked: false,
-            content: `<div style="display: flex; justify-content: center; align-items: end; border-radius: 0.5vw; border-style: solid; border-color: #FCFAEE; border-width: 0.05vw; width: 25%; height: 100%; background-color: #141414;">Night</div>
-                <div style="display: flex; justify-content: center; align-items: end; border-radius: 0.5vw; border-style: solid; border-color: #FCFAEE; border-width: 0.05vw; width: 25%; height: 100%; background-color: #2F2F2F;">Jet</div>
-                <div style="display: flex; justify-content: center; align-items: end; border-radius: 0.5vw; border-style: solid; border-color: #FCFAEE; border-width: 0.05vw; width: 25%; height: 100%; background-color: #454ADE;">Iris</div>
-                <div style="display: flex; justify-content: center; align-items: end; border-radius: 0.5vw; border-style: solid; border-color: #FCFAEE; border-width: 0.05vw; width: 25%; height: 100%; background-color: #00A676;">Jade</div>`
+            content: `<div style="display: flex; justify-content: center; align-items: end; border-radius: 0.5vw; border-style: solid; border-color: #FCFAEE; border-width: 0.05vw; width: 25%; height: 100%; background-color: #141414;"><p>Night</p></div>
+                <div style="display: flex; justify-content: center; align-items: end; border-radius: 0.5vw; border-style: solid; border-color: #FCFAEE; border-width: 0.05vw; width: 25%; height: 100%; background-color: #2F2F2F;"><p>Jet</p></div>
+                <div style="display: flex; justify-content: center; align-items: end; border-radius: 0.5vw; border-style: solid; border-color: #FCFAEE; border-width: 0.05vw; width: 25%; height: 100%; background-color: #454ADE;"><p>Iris</p></div>
+                <div style="display: flex; justify-content: center; align-items: end; border-radius: 0.5vw; border-style: solid; border-color: #FCFAEE; border-width: 0.05vw; width: 25%; height: 100%; background-color: #00A676;"><p>Jade</p></div>`
         },
         
         {
             title: "Logo",
             clicked: false,
-            content: Graphics
 
         },
 
@@ -22,7 +21,7 @@
             title: "Typography",
             clicked: false,
             content: `<div>
-                <h1>ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890</h1>
+                <h1 style="font-size: 1.5vw;">ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890</h1>
                 <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890</p>
             </div>`
         }
@@ -34,7 +33,11 @@
             <h1>{section.title}</h1>
             {#if section.clicked}
                 <content>
-                    {@html section.content}
+                    {#if section.title == "Logo"}
+                        <Logo />
+                    {:else}
+                        {@html section.content}
+                    {/if}
                 </content>
             {/if}
         </div>
@@ -121,6 +124,19 @@
         border-radius: 0.5vw;
         border-color: #FCFAEE;
         border-width: 0.2vw;
+        div {
+            p{
+                opacity: 0;
+                transition: 0.3s;
+            }
+            &:hover {
+            
+                p {
+                    opacity: 1;
+                    transition: 0.3s;
+                }
+            }
+        }
     }
     h1 {
         z-index: 1000;

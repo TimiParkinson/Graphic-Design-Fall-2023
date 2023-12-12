@@ -47,6 +47,20 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        
+        p {
+            opacity: 0;
+            margin-top: 0;
+            transition: 0.3s;
+        }
+        &:hover {
+            color: #454ADE;
+            fill: #454ADE;
+            stroke: #454ADE;
+            transition: 0.3s;
+            p {
+                opacity: 1;
+                transition: 0.3s;
+            }
+        }
     }
 </style>
