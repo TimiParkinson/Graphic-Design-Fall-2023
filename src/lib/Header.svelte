@@ -1,5 +1,5 @@
 <script lang="ts">
-    export let page: string = "voice";
+    export let page: string = "home";
     export let pages: any = {
         home: "Home",
         voice: "Voice",
@@ -22,6 +22,8 @@
 
 <style lang="scss">
     div {
+        z-index: 99999999999999999999999;
+        position: absolute;
         display: flex;
         flex-direction: row;
         align-items: center;

@@ -5,7 +5,7 @@
         {
             title: "Target Audience",
             clicked: false,
-            content: "<p> This portfolio is target toward future educators, employers, coworkers, and clients. </p>"
+            content: "<p> This portfolio is targeted toward future educators, employers, coworkers, and clients. </p>"
         },
         
         {

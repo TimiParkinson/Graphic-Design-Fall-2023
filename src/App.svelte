@@ -6,7 +6,10 @@
   import Promises from './lib/Promises.svelte';
   import Values from './lib/Values.svelte';
   import Positioning from './lib/Positioning.svelte';
-  let page: string = "home";
+  import Background from './lib/Background.svelte';
+
+  // page as const \\
+  let page: string;
   let pages: any = {
     home: Home,
     voice: Voice,
@@ -19,4 +22,5 @@
 <main>
   <Header bind:page />
   <svelte:component this={pages[page]} />
+  <Background />
 </main>
