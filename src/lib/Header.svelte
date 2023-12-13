@@ -22,12 +22,15 @@
 
 <style lang="scss">
     div {
-        position: sticky;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
         width: 50vw;
+        margin: auto;
+        margin-bottom: 1vw;
+        top: 0;
+        left: 25vw;
     }
 
     button {

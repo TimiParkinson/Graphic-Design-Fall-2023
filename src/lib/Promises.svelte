@@ -58,7 +58,7 @@ let sections: any = [
         width: 33vw;
         background-color: #FCFAEE;
         color: #141414;
-        border-radius: 0.5vw;
+        border-radius: 0.2vw;
         transition: 0.3s;
         &:hover {
             height: 30vh;

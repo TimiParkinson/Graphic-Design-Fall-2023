@@ -6,8 +6,8 @@
   import Promises from './lib/Promises.svelte';
   import Values from './lib/Values.svelte';
   import Positioning from './lib/Positioning.svelte';
-  let page = "home";
-  let pages = {
+  let page: string = "home";
+  let pages: any = {
     home: Home,
     voice: Voice,
     identity: Identity,

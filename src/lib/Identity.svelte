@@ -5,10 +5,10 @@
         {
             title: "Color Palette",
             clicked: false,
-            content: `<div style="display: flex; justify-content: center; align-items: end; border-radius: 0.5vw; border-style: solid; border-color: #FCFAEE; border-width: 0.05vw; width: 25%; height: 100%; background-color: #141414;"><p>Night</p></div>
-                <div style="display: flex; justify-content: center; align-items: end; border-radius: 0.5vw; border-style: solid; border-color: #FCFAEE; border-width: 0.05vw; width: 25%; height: 100%; background-color: #2F2F2F;"><p>Jet</p></div>
-                <div style="display: flex; justify-content: center; align-items: end; border-radius: 0.5vw; border-style: solid; border-color: #FCFAEE; border-width: 0.05vw; width: 25%; height: 100%; background-color: #454ADE;"><p>Iris</p></div>
-                <div style="display: flex; justify-content: center; align-items: end; border-radius: 0.5vw; border-style: solid; border-color: #FCFAEE; border-width: 0.05vw; width: 25%; height: 100%; background-color: #00A676;"><p>Jade</p></div>`
+            content: `<div style="display: flex; justify-content: center; align-items: end; border-radius: 0.2vw; border-style: solid; border-color: #FCFAEE; border-width: 0.05vw; width: 25%; height: 100%; background-color: #141414;"><p>Night</p></div>
+                <div style="display: flex; justify-content: center; align-items: end; border-radius: 0.2vw; border-style: solid; border-color: #FCFAEE; border-width: 0.05vw; width: 25%; height: 100%; background-color: #2F2F2F;"><p>Jet</p></div>
+                <div style="display: flex; justify-content: center; align-items: end; border-radius: 0.2vw; border-style: solid; border-color: #FCFAEE; border-width: 0.05vw; width: 25%; height: 100%; background-color: #454ADE;"><p>Iris</p></div>
+                <div style="display: flex; justify-content: center; align-items: end; border-radius: 0.2vw; border-style: solid; border-color: #FCFAEE; border-width: 0.05vw; width: 25%; height: 100%; background-color: #00A676;"><p>Jade</p></div>`
         },
         
         {
@@ -72,7 +72,7 @@
         width: 33vw;
         background-color: #FCFAEE;
         color: #141414;
-        border-radius: 0.5vw;
+        border-radius: 0.2vw;
         transition: 0.3s;
         &:hover {
             height: 30vh;
@@ -121,7 +121,7 @@
         height: 100%;
         color: #FCFAEE;
         font-size: 2vw;
-        border-radius: 0.5vw;
+        border-radius: 0.2vw;
         border-color: #FCFAEE;
         border-width: 0.2vw;
         div {
