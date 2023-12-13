@@ -8,8 +8,8 @@
   import Positioning from './lib/Positioning.svelte';
   import Background from './lib/Background.svelte';
 
-  // page as const \\
-  let page: string;
+  // Page Settings \\
+  let page: string; //page as const
   let pages: any = {
     home: Home,
     voice: Voice,
@@ -18,9 +18,13 @@
     values: Values,
     positioning: Positioning
   };
+
+  // Background Settings \\
+  let gridSize: number = 6;
+  let maxGraphics: number = 12;
 </script>
 <main>
   <Header bind:page />
   <svelte:component this={pages[page]} />
-  <Background />
+  <Background gridSize={gridSize} maxGraphics={maxGraphics}/>
 </main>
