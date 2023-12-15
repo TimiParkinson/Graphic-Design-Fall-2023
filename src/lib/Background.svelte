@@ -25,8 +25,8 @@
         }));
     }
 
-    const minInterval = 1000;
-    const maxInterval = 1000;
+    const minInterval = 5000;
+    const maxInterval = 10000;
 
     function getRandomInterval() {
         return Math.floor(Math.random() * (maxInterval - minInterval + 1)) + minInterval;
