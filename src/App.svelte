@@ -21,7 +21,7 @@
 
   // Background Settings \\
   let gridSize: number = 6;
-  let maxGraphics: number = 12;
+  let maxGraphics: number = 8;
 </script>
 <main>
   <Header bind:page />
