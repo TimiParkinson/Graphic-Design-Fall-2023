@@ -1,6 +1,5 @@
 <style lang="scss">
   .b {
-    fill: #FCFAEE;
     stroke-width: 0px;
   }
 

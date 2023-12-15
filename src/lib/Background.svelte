@@ -40,9 +40,7 @@
     }
 
     const graphicStyle = `
-        background-color: transparent;
-        height: 100%;
-        width: 100%;
+        opacity: 0;
         transition: 0.5s ease-in-out;
     `;
 </script>
@@ -50,10 +48,8 @@
 <div class="grid" style="--gridSize: {gridSize}">
     {#each grid as row, _}
         {#each row as cell, _}
-            <div class="grid-item">
-            {#if cell}
-                    <svelte:component class="graphic" this={randomComponent()} />
-            {/if}
+            <div class="grid-item {cell ? "show" : ""}">
+                <svelte:component class="graphic" this={randomComponent()} />
             </div>
         {/each}
     {/each}
@@ -77,7 +73,10 @@
     }
 
     .grid-item {
-        /*display: none;*/
+        opacity: 0;
+        fill: #2f2f2f;
+        stroke: #2f2f2f;
+        color: #2f2f2f;
         background-color: transparent;
         width: 100%; /*calc(100% / var(--gridSize));*/
         height: 100%; /*calc(100% / var(--gridSize));*/
@@ -85,5 +84,11 @@
         object-fit: contain;
         transition: 0.5s ease-in-out;
     }
-    
+    .show {
+        fill: #454ADE;
+        stroke: #454ADE;
+        color: #454ADE;
+        opacity: 1;
+        transition: 0.5s ease-in-out;
+    }
 </style>

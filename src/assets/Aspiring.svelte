@@ -7,6 +7,26 @@
   svg {
     height: 100%;
   }
+
+  svg {
+    stroke-dasharray: 10;
+    stroke-dashoffset: 10;
+    animation: draw 4s ease forwards infinite;
+  }
+
+  @keyframes draw {
+    0% {
+      stroke-dashoffset: 10;
+    }
+
+    50% {
+      stroke-dashoffset: 0;
+    }
+    
+    100% {
+      stroke-dashoffset: 10;
+    }
+  }
 </style>
 
 <svg class={$$props.class} id="a" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62.155 100">
