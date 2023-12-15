@@ -1,12 +1,12 @@
 @font-face {
   font-family: TimiSans;
-  src: local("TimiSans") url("fonts/TimiSans.otf") format("otf"), url("fonts/timisans_3-webfont.woff2") format("woff2"), url("fonts/timisans_3-webfont.woff") format("woff");
+  src: local("TimiSans") url("./assets/fonts/TimiSans.otf") format("otf"), url("./assets/fonts/timisans_3-webfont.woff2") format("woff2"), url("./assets/fonts/timisans_3-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: OluSans;
-  src: local("OluSans") url("fonts/OluSans.otf") format("otf"), url("fonts/olusans-webfont.woff2") format("woff2"), url("fonts/olusans-webfont.woff") format("woff");
+  src: local("OluSans") url("./assets/fonts/OluSans.otf") format("otf"), url("./assets/fonts/olusans-webfont.woff2") format("woff2"), url("./assets/fonts/olusans-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
