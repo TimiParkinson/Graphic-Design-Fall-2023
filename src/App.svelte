@@ -23,6 +23,7 @@
   let gridSize: number = 6;
   let maxGraphics: number = 8;
 </script>
+
 <main>
   <Header bind:page />
   <svelte:component this={pages[page]} />

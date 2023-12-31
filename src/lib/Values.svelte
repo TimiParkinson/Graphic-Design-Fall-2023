@@ -1,10 +1,12 @@
 <script lang="ts">
     import ValuesPageGraphic from "../assets/Values Page Graphic.svelte";
+
+    let show: boolean = false;
 </script>
 
-<div>
-    <ValuesPageGraphic />
-    <div>
+<div class="page">
+    <ValuesPageGraphic/>
+    <div class="p-container" class:show>
         <p>Curiosity</p>
         <p>Integrity</p>
         <p>Excellence</p>
@@ -13,38 +15,44 @@
 </div>
 
 <style lang="scss">
-    div {
+    .page {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
         height: 90vh;
-        transition: 0.3s;
-        div {
-            display: none;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 90vh;
-            p {
-                opacity: 0;
-                transform: translate(-100%, 0%);
-                font-size: 2vw;
-                margin-bottom: 0;
-                transition: 0.3s;
-            }
-        }
         &:hover {
-            div {
-                display: flex;
+            .p-container {
                 p {
                     opacity: 1;
-                    transform: translate(0, 0);
+                    transform: translate(300%, 0);
                     transition: 0.3s;
+                    @for $i from 1 through 4 {
+                        &:nth-child(#{$i}) {
+                            transition-delay: 0.1s * $i;
+                        }
+                    }
                 }
             }
         }
     }
-   
+    .p-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        p {
+            opacity: 0;
+            transform: translate(-100%, 0%);
+            font-size: 2vw;
+            margin-bottom: 0;
+            transition: 0.3s;
+            @for $i from 1 through 4 {
+                &:nth-child(#{$i}) {
+                    transition-delay: 0.05s * $i;
+                }
+            }
+        }
+    }
 </style> 
 

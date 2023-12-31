@@ -38,11 +38,6 @@
     function randomComponent() {
         return components[Math.floor(Math.random() * components.length)];
     }
-
-    const graphicStyle = `
-        opacity: 0;
-        transition: 0.5s ease-in-out;
-    `;
 </script>
 
 <div class="grid" style="--gridSize: {gridSize}">
